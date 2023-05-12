@@ -98,6 +98,30 @@ body {
 .navigation-list {
   display: flex;
 }
+
+.navigation-list a:hover,
+.navigation-list a:focus {
+  outline: none;
+  color: #2196f3;
+}
+.navigation-list a:hover::after,
+.navigation-list a:focus::after {
+  display: block;
+}
+.navigation-links a {
+  position: relative;
+}
+.navigation-list a::after {
+  position: absolute;
+  content: "";
+  display: none;
+  background: #2196f3;
+  width: 100%;
+  height: 3px;
+  bottom: -29px;
+  left: 0;
+  border-radius: 2px;
+}
 .navigation-list li {
   display: flex;
   margin: 0px 50px 0px 0px;
